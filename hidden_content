@@ -1,0 +1,14 @@
+<button onclick="showContent()">Show hidden content</button>
+
+<template>
+  <h2>Flower</h2>
+  <img src="https://www.google.com/aclk?sa=l&ai=DChcSEwj28PXIpc6DAxVMPYMDHePPDCgYABAHGgJzZg&ase=2&gclid=CjwKCAiA1-6sBhAoEiwArqlGPhl_j8v-8nz1RxS8JoTMFEmhMklfOfKmhk9xqr8YvmQkzMcrL_c8EhoCG1kQAvD_BwE&sig=AOD64_0I6AMH7X-kzhkfbLq1k3-uDTfKFA&ctype=5&nis=6&adurl&ved=2ahUKEwjdxOrIpc6DAxUysWMGHWsKBLQQwg96BQgBEIkB" width="214" height="204">
+</template>
+
+<script>
+function showContent() {
+  let temp = document.getElementsByTagName("template")[0];
+  let clon = temp.content.cloneNode(true);
+  document.body.appendChild(clon);
+}
+</script>
